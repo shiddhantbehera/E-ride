@@ -1,0 +1,58 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#delete-form {
+    display: inline;
+}
+
+body {
+    /* background: #8E0E00;
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    background: linear-gradient(to right, #1F1C18, #8E0E00); */
+    background-color: black;
+}
+
+#mainNavbar {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+	color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    background-color: black;
+	color: #ea1c2c;
+}
+
+#mainNavbar .navbar-brand {
+	color: #ea1c2c;
+}
+
+#mainNavbar .navbar-collapse {
+    columns: white;
+}
+
+.fas:hover {
+    color: red;
+}
+
+#landing-header .container {
+    margin: 0px;
+}
+
+/* #map-image {
+    height: 20px;
+    width: 25%;
+    box-sizing: inline;
+} */

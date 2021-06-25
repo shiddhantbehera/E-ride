@@ -1,0 +1,40 @@
+<%- include("../partials/header") %>
+
+<link rel="stylesheet" href="/stylesheets/index.css">
+<ul class="slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+<div class="container" id="index-header">
+    <header class="jumbotron"  style="color: black;background-color: rgba(255, 255, 255, 0.1);">
+        <div class="container">
+            <h1 class="text-center" style="color: black;">Welcome to E-Ride!</h1>
+            <p class="text-center">View our Parking Locations and travel around, hassle-free !</p>
+            <p class="text-center">
+                <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Parking Location</a>
+            </p>
+        </div>
+    </header>
+
+    <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+        <% campgrounds.forEach(function(campground){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="<%= campground.image %>">
+                    <div class="caption">
+                        <h4><%= campground.name %></h4>
+                    </div>
+                    <p>
+                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<%- include("../partials/footer") %>
